@@ -1,0 +1,6 @@
+@ZOV_HostAddress = http://localhost:5052
+
+GET {{ZOV_HostAddress}}/SignIn/SignInUser
+Accept: application/json
+
+###
