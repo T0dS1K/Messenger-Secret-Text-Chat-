@@ -1,0 +1,27 @@
+﻿<Window x:Class="CRINGEGRAM.AuthN"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRINGEGRAM"
+        mc:Ignorable="d"
+        Title="AuthN" Height="789" Width="1016" ScrollViewer.VerticalScrollBarVisibility="Disabled" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Height="750" Width="1000"  VerticalAlignment="Center" Background="#FF171717" >
+        <Image Source="PNG/AuthN.png"/>
+        <Button x:Name="RegIn" Content="ЗАРЕГИСТРИРОВАТЬСЯ" HorizontalAlignment="Center" Margin="0,681,0,0" VerticalAlignment="Top" Height="20" Width="170" Foreground="White" BorderThickness="0,0,0,0" Background="#FF212121" Click="RegIn_Click"/>
+        <Button x:Name="SingIn" Content="ВОЙТИ" HorizontalAlignment="Center" Margin="0,635,0,0" VerticalAlignment="Top" Height="40" Width="170" Foreground="White" BorderThickness="0,0,0,0" Background="#FF212121" FontSize="16" Click="SingIn_Click"/>
+        <TextBox x:Name="UserPassBox" HorizontalAlignment="Center" Margin="0,492,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="470" MaxLength="16" Background="#FF212121" TextAlignment="Center" Height="40" BorderThickness="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="White">
+            <TextBox.SelectionBrush>
+                <SolidColorBrush Color="White" Opacity="0.25"/>
+            </TextBox.SelectionBrush>
+        </TextBox>
+        <TextBox x:Name="UserLoginBox" HorizontalAlignment="Center" Margin="0,446,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="470" MaxLength="10" Background="#FF212121" TextAlignment="Center" Height="40" BorderThickness="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Foreground="White">
+            <TextBox.SelectionBrush>
+                <SolidColorBrush Color="White" Opacity="0.25"/>
+            </TextBox.SelectionBrush>
+        </TextBox>
+        <Label Content="ЛОГИН" HorizontalAlignment="Left" Margin="265,446,0,0" VerticalAlignment="Top" Height="40" Width="90" Foreground="White" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="ПАРОЛЬ" HorizontalAlignment="Left" Margin="265,492,0,0" VerticalAlignment="Top" Height="40" Width="90" Foreground="White" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label x:Name="ReportBox" Content="" HorizontalAlignment="Center" Margin="0,398,0,0" VerticalAlignment="Top" Height="40" Foreground="White" Width="470" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    </Grid>
+</Window>
